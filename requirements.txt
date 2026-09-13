@@ -1,0 +1,19 @@
+# Pinned to match laundering-ring-detection's own installed environment
+# exactly, not just its requirements.txt (which has drifted from what is
+# actually installed there). A gradient boosting model refit here on
+# identical data gave a materially different ring recall the first time this
+# was tried, traced to a scikit-learn version difference between the two
+# projects' virtual environments rather than anything about the data or the
+# retraining itself. See docs/environment_notes.md.
+duckdb==1.5.5
+pandas==2.3.3
+numpy==2.3.5
+scikit-learn==1.7.2
+matplotlib==3.8.4
+pyarrow>=23.0.1
+pytest>=9.0.3
+torch==2.14.0
+torch_geometric==2.8.0.post1
+dagster==1.12.6
+dagster-webserver==1.12.6
+kafka-python-ng>=2.2.2

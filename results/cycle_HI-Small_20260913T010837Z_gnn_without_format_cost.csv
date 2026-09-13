@@ -1,0 +1,3 @@
+split,model,stage,seconds
+HI-Small,gnn_without_format,train,52.79891050001606
+HI-Small,gnn_without_format,inference,0.5097525419841986

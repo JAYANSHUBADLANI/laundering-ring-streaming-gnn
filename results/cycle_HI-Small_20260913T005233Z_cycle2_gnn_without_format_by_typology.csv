@@ -1,0 +1,9 @@
+split,variant,typology,rings,caught,ring_recall,alert_budget
+HI-Small,gnn_without_format,BIPARTITE,18,1,0.05555555555555555,0.001
+HI-Small,gnn_without_format,CYCLE,32,0,0.0,0.001
+HI-Small,gnn_without_format,FAN-IN,25,2,0.08,0.001
+HI-Small,gnn_without_format,FAN-OUT,24,2,0.08333333333333333,0.001
+HI-Small,gnn_without_format,GATHER-SCATTER,40,3,0.075,0.001
+HI-Small,gnn_without_format,RANDOM,24,1,0.041666666666666664,0.001
+HI-Small,gnn_without_format,SCATTER-GATHER,30,0,0.0,0.001
+HI-Small,gnn_without_format,STACK,25,1,0.04,0.001

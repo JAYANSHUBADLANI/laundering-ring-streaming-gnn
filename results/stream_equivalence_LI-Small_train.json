@@ -1,0 +1,17 @@
+{
+  "split": "LI-Small",
+  "segment": "train",
+  "batch_transactions": 4846510,
+  "batch_accounts": 703504,
+  "batch_edges": 802623,
+  "streamed_transactions": 4846510,
+  "streamed_accounts": 703504,
+  "streamed_edges": 802623,
+  "accounts_match": true,
+  "edges_match": true,
+  "exact_match": true,
+  "accounts_only_in_batch": 0,
+  "accounts_only_in_streamed": 0,
+  "edges_only_in_batch": 0,
+  "edges_only_in_streamed": 0
+}

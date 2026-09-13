@@ -1,0 +1,7 @@
+split,model,stage,seconds
+HI-Small,graph_features,rebuild,2.6420397920010146
+HI-Small,gradient_boosting,retrain_all_4_variants,19.717825041996548
+HI-Small,gnn_with_format,train,34.1056281249912
+HI-Small,gnn_with_format,inference,0.44439399999100715
+HI-Small,gnn_without_format,train,32.81266591697931
+HI-Small,gnn_without_format,inference,0.455233834014507

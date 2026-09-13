@@ -1,0 +1,4 @@
+split,variant,alert_budget,alerts,test_transactions,test_laundering,laundering_in_alerts,txn_recall,precision,rings_evaluable,rings_not_evaluable,precision_lo,precision_hi,ring_recall_at_least_1,ring_recall_at_least_1_lo,ring_recall_at_least_1_hi,ring_recall_at_least_2,ring_recall_at_least_2_lo,ring_recall_at_least_2_hi,ring_recall_at_least_half,ring_recall_at_least_half_lo,ring_recall_at_least_half_hi
+LI-Small,gnn_with_format,0.001,2077,2077316,1200,3,0.0025,0.0014443909484833895,68,49,0.0,0.003370245546461242,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+LI-Small,gnn_with_format,0.005,10387,2077316,1200,16,0.013333333333333334,0.0015403870222393376,68,49,0.0008664677000096274,0.0023105805333590063,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+LI-Small,gnn_with_format,0.01,20773,2077316,1200,27,0.0225,0.0012997641168824917,68,49,0.0008183699995186059,0.0017823617195397805,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0

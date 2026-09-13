@@ -1,0 +1,17 @@
+{
+  "split": "HI-Small",
+  "segment": "train",
+  "batch_transactions": 3554066,
+  "batch_accounts": 513284,
+  "batch_edges": 588606,
+  "streamed_transactions": 3554066,
+  "streamed_accounts": 513284,
+  "streamed_edges": 588606,
+  "accounts_match": true,
+  "edges_match": true,
+  "exact_match": true,
+  "accounts_only_in_batch": 0,
+  "accounts_only_in_streamed": 0,
+  "edges_only_in_batch": 0,
+  "edges_only_in_streamed": 0
+}

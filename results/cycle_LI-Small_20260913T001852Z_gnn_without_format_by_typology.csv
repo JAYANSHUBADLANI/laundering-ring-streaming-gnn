@@ -1,0 +1,9 @@
+split,variant,typology,rings,caught,ring_recall,alert_budget
+LI-Small,gnn_without_format,BIPARTITE,8,0,0.0,0.001
+LI-Small,gnn_without_format,CYCLE,10,0,0.0,0.001
+LI-Small,gnn_without_format,FAN-IN,6,0,0.0,0.001
+LI-Small,gnn_without_format,FAN-OUT,10,0,0.0,0.001
+LI-Small,gnn_without_format,GATHER-SCATTER,8,0,0.0,0.001
+LI-Small,gnn_without_format,RANDOM,8,0,0.0,0.001
+LI-Small,gnn_without_format,SCATTER-GATHER,9,0,0.0,0.001
+LI-Small,gnn_without_format,STACK,9,0,0.0,0.001
