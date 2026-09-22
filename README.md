@@ -288,10 +288,10 @@ most typologies rather than a graded failure concentrated on the hard ones.
 
 | split | model | train | inference | one full retrain cycle |
 | --- | --- | --- | --- | --- |
-| HI-Small | gradient boosting, 4 variants | — | — | 20.2s (fit + score all four) |
-| HI-Small | GNN, one variant, 30 epochs | 35 to 65s | 0.4 to 16s | — |
-| LI-Small | gradient boosting, 4 variants | — | — | 34.8 to 38.5s |
-| LI-Small | GNN, one variant, 30 epochs | 1618 to 1819s (27 to 30 min) | 10 to 13s | — |
+| HI-Small | gradient boosting, 4 variants | n/a | n/a | 20.2s (fit + score all four) |
+| HI-Small | GNN, one variant, 30 epochs | 35 to 65s | 0.4 to 16s | n/a |
+| LI-Small | gradient boosting, 4 variants | n/a | n/a | 34.8 to 38.5s |
+| LI-Small | GNN, one variant, 30 epochs | 1618 to 1819s (27 to 30 min) | 10 to 13s | n/a |
 
 On HI-Small the GNN is cheap: training one variant is a fraction of a
 minute, in the same order of magnitude as the gradient boosting refit it is
