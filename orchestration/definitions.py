@@ -73,8 +73,8 @@ def update_graph(context: OpExecutionContext, split: str) -> str:
                       "epochs": dg.Field(dg.Int, default_value=30)})
 def refresh_features_and_retrain(context: OpExecutionContext, split: str) -> dict:
     """Graph feature refresh, gradient boosting retrain, GNN retrain and
-    scoring, all in one op: `amlgnn.pipeline.run_cycle` already does exactly
-    the sequence the task list calls for, and splitting it into four Dagster
+    scoring, all in one op: `amlgnn.pipeline.run_cycle` already runs exactly
+    that sequence, and splitting it into four Dagster
     ops with DataFrames passed between them would need one more concept
     (an IO manager for pandas frames) for no benefit a single local run gets
     from it.

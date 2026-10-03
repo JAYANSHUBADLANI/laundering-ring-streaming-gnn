@@ -155,11 +155,10 @@ per cycle, is in `results/cycle_*_cost.csv`.
 
 Getting a usable LI-Small GNN number took three attempts, not because the
 model was wrong but because two runs never survived to write one down. The
-first was killed by hand after 30 minutes of `gnn_with_format` training with
-no output, on the wrong assumption that it had hung; a `sample` of the
-process while it was still alive showed it waiting on ordinary worker thread
-synchronisation, not deadlocked, and killing it lost a training run that
-would have finished. The second died on its own partway through the second
+first was stopped by hand after 30 minutes of `gnn_with_format` training with
+no output. It had not hung: a `sample` of the process showed it waiting on
+ordinary worker thread synchronisation, not deadlocked, so it was slow and
+silent rather than stuck. The second died on its own partway through the second
 `payment_format` variant, with `vm.swapusage` showing swap over 90 percent
 full at the time, consistent with an out-of-memory kill, though this
 machine was also running several other memory-heavy processes throughout so
