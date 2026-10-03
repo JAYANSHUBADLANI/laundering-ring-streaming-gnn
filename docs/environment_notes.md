@@ -1,4 +1,4 @@
-# Environment checks, run before anything else was built
+# Environment notes
 
 Machine: Apple M5, 10 CPU cores, 16 GB RAM, 136 GB free disk, macOS, arm64.
 
@@ -8,13 +8,6 @@ Already present locally from `laundering-ring-detection`'s own fetch:
 `data/raw/{HI,LI}-Small_Trans.csv`, the matching `_accounts.csv` and
 `_Patterns.txt` files, and a built `data/interim/aml.duckdb`. Nothing was
 re-downloaded.
-
-## Docker
-
-`docker --version` and `docker compose version` reported 29.7.2 and v5.3.1,
-but the daemon was not running. Started Docker Desktop, waited for
-`docker info` to succeed, then ran `docker run --rm hello-world` end to end
-to confirm a container actually executes, not just that the binaries exist.
 
 ## PyTorch Geometric vs DGL
 
@@ -77,14 +70,13 @@ running several other concurrent processes the whole time, so
 contention was not zero either. The most likely remaining explanation is a
 size-dependent performance cliff in PyTorch's MPS (Apple GPU) backend for
 GraphSAGE's scatter/gather aggregation, somewhere between HI-Small's edge
-count and LI-Small's; this was not fully bisected or root-caused within this
-project's time budget, and is reported as an open question rather than
-quietly worked around. It does not affect correctness: LI-Small's GNN still
-trains and produces valid scores, just far slower than HI-Small's numbers
-would suggest, which is why the three-cycle retraining experiment
-(`results/multi_cycle_summary_*.csv`) was run on HI-Small rather than
-LI-Small, where a few-minutes-per-cycle cost had already been established
-directly rather than assumed.
+count and LI-Small's; this was not fully bisected or root-caused, and is
+reported as an open question rather than quietly worked around. It does not
+affect correctness: LI-Small's GNN still trains and produces valid scores,
+just far slower than HI-Small's numbers would suggest, which is why the
+three-cycle retraining experiment (`results/multi_cycle_summary_*.csv`) was
+run on HI-Small rather than LI-Small, where a few-minutes-per-cycle cost had
+already been established directly rather than assumed.
 
 ## A reproducibility issue this surfaced, not anticipated going in
 

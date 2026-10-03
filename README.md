@@ -51,9 +51,6 @@ Summary:
 
 - **Dataset**: already present from the source repository's own fetch. Not
   re-downloaded.
-- **Docker**: installed but the daemon was not running; started it, then
-  confirmed a container actually executes (`docker run hello-world`), not
-  just that the binaries exist.
 - **PyTorch Geometric vs. DGL**: PyTorch Geometric installed cleanly (torch
   2.14.0, torch_geometric 2.8.0.post1) with Apple GPU (MPS) support on this
   machine, and both `SAGEConv` and `GCNConv` round tripped a test tensor.

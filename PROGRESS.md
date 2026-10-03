@@ -194,9 +194,9 @@ rather than a tuning problem are in `README.md`.
 The three-cycle retraining experiment ran on HI-Small, not LI-Small, once
 LI-Small's per-epoch cost turned out to be an open, unexplained, roughly
 45-times outlier rather than the couple of minutes HI-Small's own numbers
-would have predicted: three repeated cycles at that cost were not worth
-paying for under this project's time budget, and running them would not by
-itself have explained the anomaly either. On HI-Small, three cycles showed
+would have predicted: three repeated cycles at that cost would have run for
+hours, and running them would not by itself have explained the anomaly
+either. On HI-Small, three cycles showed
 retraining on more streamed data does move ring recall, substantially and
 without plateauing, for the graph feature model (0.055 to 0.138 to 0.317
 across the three cycles); the GNN moved too, but inside a band close enough
